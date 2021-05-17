@@ -38,7 +38,7 @@ A closure is when a nested function accesses variables outside of it's direct sc
 
 4. Describe the four principles of the 'this' keyword.
 New binding --> Used when creating a new instance of a class. This binds all the class methods and attributes to the created instance.
-window/default binding --> When none of the other rules for binding apply, our "this" is the global object. Inside a browser "this" will be the window.
+window/default binding --> When none of the other rules for binding apply, our "this" is the global object. Inside a browser "this" will be the window. or if in strict mode it will return undefined.
 Explicit binding --> when we use .bind .apply .call --> Func.call(this, param1, param2, ... );
 Implicit Binding --> When we use dot notation to invoke or call a function
 
