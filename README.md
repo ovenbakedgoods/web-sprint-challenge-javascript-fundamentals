@@ -30,12 +30,20 @@ Edit this document to include your answers after each question. Make sure to lea
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
 2. Explain the difference between a callback and a higher order function.
+A callback function is a function that can be passed to a higher order function as a parameter. 
+A callback function does not accept functions as a parameter. 
 
 3. Can you explain what a closure is and how you used it in the counter function? 
+A closure is when a nested function accesses variables outside of it's direct scope. It's lexical scope allows for variables to be passed downwards.
 
 4. Describe the four principles of the 'this' keyword.
+New binding --> Used when creating a new instance of a class. This binds all the class methods and attributes to the created instance.
+window/default binding --> When none of the other rules for binding apply, our "this" is the global object. Inside a browser "this" will be the window. or if in strict mode it will return undefined.
+Explicit binding --> when we use .bind .apply .call --> Func.call(this, param1, param2, ... );
+Implicit Binding --> When we use dot notation to invoke or call a function
 
 5. Why do we need super() in an extended class?
+Super() replaces object.create and binds all methods that belong to the parent class down to the child class. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
